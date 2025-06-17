@@ -58,53 +58,109 @@ body, html {
     color: white;
 }
 
-.credit-container a:active,a:link,a:visited  {
+.credit-container{
     color: white;
 }
 
-.right-side-content {
-    display: flex;
-    flex: 1;
-    background-color: white;
-    padding: 15px;
+.credit-container a:link,
+.credit-container a:visited {
+    color: inherit;
 }
 
-
-/*.content-container {
+.right-side-content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+    flex: 1;
+    background-color: #f9fafb;
 }
 
-.left-side-content {
-   width: 35%;
-   min-width: 35%;
+.heading1 {
+    font-family: sans-serif;
+    font-weight: 100;
+
+    line-height: 1.4;
+    padding-left: 45px;
+    padding-top: 60px;
+    text-wrap: pretty;
+    max-width: 745px;
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-}
-
-.logo-container img {
-    position: absolute;
-    height: 150px;
-    width: 125px;
-}
-
-.right-side-content {
-    width: 65%;
-    padding: 40px;
-    overflow-y: auto;
+.main-form-container {
+    margin-top: 35px;
+    padding-left: 45px;
+    padding-bottom: 15px;
     background-color: white;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.3);
 }
 
-.bg-image {
-   height: 100vh;
-
-   background-image: url("../img/halie-west-25xggax4bSA-unsplash.jpg");
-   background-size: cover;
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 500px;
 }
-*/
+
+.form-container input {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input:invalid {
+    outline: none;
+    border: 1px solid rgba(184, 11, 11, 0.6)
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgba(11, 86, 184, 0.9);
+    box-shadow: 0px 6px 6px -4px rgba(0,0,0, 0.3);
+}
+
+
+.form-container form {
+    margin-right: 90px;
+}
+
+.first_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.third_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-submission {
+    margin-top: 35px;
+    padding-left: 45px;
+
+    font-family: sans-serif;
+}
+
+.form-submission button {
+    height: 40px;
+    width: 200px;
+    background-color: #596D48;
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 4px;
+    box-shadow: 0px 6px 6px -4px rgba(0,0,0, 0.3);
+}
+
+.form-submission a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
